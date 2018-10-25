@@ -3,6 +3,7 @@
 namespace LaravelEnso\Companies\app\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use LaravelEnso\People\app\Models\Person;
 use LaravelEnso\TrackWho\app\Traits\CreatedBy;
 use LaravelEnso\TrackWho\app\Traits\UpdatedBy;
 use LaravelEnso\Contacts\app\Traits\Contactable;
@@ -15,7 +16,7 @@ use Symfony\Component\HttpKernel\Exception\ConflictHttpException;
 
 class Company extends Model
 {
-    use Addressable, Commentable, Contactable, CreatedBy, Discussable,
+    use Addressable, Commentable, CreatedBy, Discussable,
         Documentable, LogsActivity, UpdatedBy;
 
     protected $guarded = [];
@@ -29,6 +30,16 @@ class Company extends Model
     public function mandatary()
     {
         return $this->hasOne(self::class);
+    }
+
+    public function contacts()
+    {
+        return $this->hasMany(Contact::class);
+    }
+
+    public function people()
+    {
+        return $this->belongsToMany(Person::class, 'contacts');
     }
 
     public function delete()
