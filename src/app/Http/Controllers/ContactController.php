@@ -5,10 +5,10 @@ namespace LaravelEnso\Companies\app\Http\Controllers;
 //use Illuminate\Routing\Controller;
 use App\Http\Controllers\Controller;
 use LaravelEnso\Companies\app\Models\Company;
+use LaravelEnso\Companies\app\Models\Contact;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use LaravelEnso\Companies\app\Forms\Builders\ContactForm;
 use LaravelEnso\Companies\app\Contracts\ValidatesContactRequest;
-use LaravelEnso\Companies\app\Models\Contact;
 
 class ContactController extends Controller
 {

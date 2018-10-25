@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 use LaravelEnso\People\app\Models\Person;
 use LaravelEnso\TrackWho\app\Traits\CreatedBy;
 use LaravelEnso\TrackWho\app\Traits\UpdatedBy;
-use LaravelEnso\Contacts\app\Traits\Contactable;
 use LaravelEnso\Discussions\app\Traits\Discussable;
 use LaravelEnso\ActivityLog\app\Traits\LogsActivity;
 use LaravelEnso\CommentsManager\app\Traits\Commentable;
