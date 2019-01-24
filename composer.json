@@ -1,5 +1,5 @@
 {
-    "name": "laravel-enso/companies",
+    "name": "boing6002/companies",
     "description": "Person management dependency for Laravel Enso",
     "keywords": [
         "laravel-enso",
@@ -20,7 +20,7 @@
     "require": {
         "php": ">=7.1.0",
         "laravel-enso/activitylog": "1.1.*",
-        "laravel-enso/core": "3.5.*",
+        "boing6002/core": "dev-master",
         "laravel-enso/formbuilder": "2.12.*",
         "laravel-enso/helpers": "1.10.*",
         "laravel-enso/structuremanager": "2.5.*",
